@@ -86,7 +86,7 @@ schemes:
       white: '#FFFFFF'
 
 colors: *nord
-background_opacity: 0.87
+window_opacity: 0.87
 
 window:
   decorations: none
