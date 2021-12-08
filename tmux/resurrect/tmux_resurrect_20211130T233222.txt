@@ -1,0 +1,19 @@
+pane	0	1	1	:*	1	:/mnt/MobyDisk/Documents/Macq/traffic-data-tools	0	bash	:
+pane	0	1	1	:*	2	:/mnt/MobyDisk/Documents/Macq/traffic-data-tools	1	bash	:
+pane	1	1	0	:	1	:/mnt/MobyDisk/Documents/Macq/dataflows	1	bash	:
+pane	1	2	0	:	1	:/mnt/MobyDisk/Documents/Macq/traffic-data-tools	1	bash	:
+pane	1	3	0	:#	1	:/mnt/MobyDisk/Documents/Macq/dataflows	1	htop	:htop
+pane	1	4	0	:	1	:/mnt/MobyDisk/Documents/Macq/dataflows	1	bash	:
+pane	1	5	0	:	1	:/mnt/MobyDisk/Documents/Macq	1	bash	:
+pane	1	6	0	:-	1	:/mnt/MobyDisk/Documents/Macq/proxy	0	docker-compose	:docker-compose up --build
+pane	1	6	0	:-	2	:/mnt/MobyDisk/Documents/Macq/dataflows	1	bash	:-bash
+pane	1	7	1	:*	1	:/mnt/MobyDisk/Documents/Macq/dataflows	1	bash	:
+window	0	1	:bash	1	:*	4d4e,213x58,0,0[213x29,0,0,1,213x28,0,30,2]	:
+window	1	1	:prefect agent	0	:	b6c0,133x90,0,0,3	off
+window	1	2	:traffic-data-tools	0	:	b6c1,133x90,0,0,4	off
+window	1	3	:htop	0	:#	b6c2,133x90,0,0,5	:
+window	1	4	:dataflows	0	:	b6c3,133x90,0,0,6	off
+window	1	5	:bash	0	:	b6c4,133x90,0,0,7	off
+window	1	6	:docker	0	:-	9b32,133x90,0,0[133x45,0,0,8,133x44,0,46,9]	off
+window	1	7	:bash	1	:*	5b8f,133x90,0,0,10	:
+state		

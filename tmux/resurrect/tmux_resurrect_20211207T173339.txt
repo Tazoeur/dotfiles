@@ -1,0 +1,11 @@
+pane	0	1	0	:	1	:/mnt/MobyDisk/Documents/Macq/dataflows	1	nvim	:nvim
+pane	0	2	0	:#	1	:/mnt/MobyDisk/Documents/Macq/traffic-data-tools	1	bash	:
+pane	0	3	0	:#	1	:/mnt/MobyDisk/Documents/Macq/dataflows	1	bash	:
+pane	0	4	1	:*	1	:/mnt/MobyDisk/Documents/Macq/dataflows	1	bash	:
+pane	0	5	0	:-	1	:/home/taz	1	bash	:
+window	0	1	:bash	0	:	b6c2,133x90,0,0,5	off
+window	0	2	:traffic_data_tools	0	:#	b6c6,133x90,0,0,9	off
+window	0	3	:dataflows	0	:#	b6c4,133x90,0,0,7	off
+window	0	4	:bash	1	:*	5b90,133x90,0,0,11	:
+window	0	5	:bash	0	:-	5b91,133x90,0,0,12	:
+state	0	

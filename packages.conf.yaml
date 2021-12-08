@@ -1,0 +1,18 @@
+# todo:
+# brew
+# spotify
+# vscode
+# alacritty
+# discord
+# telegram
+# bat
+
+
+- apt:
+    - build-essential
+    - vlc
+    - vim
+    - fzf
+    - neovim
+
+# brew install gh

@@ -1,5 +1,20 @@
 - defaults:
     link:
-      relink: true
+        relink: true
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+
+- create:
+    - ~/.config/alacritty
+    - ~/.ssh/agent-environment
 
 - clean: ['~']
+
+- link:
+    ~/.config/alacritty/alacritty.yml: alacritty.yml
+    ~/.bashrc: bashrc
+    ~/.config/nvim: nvim
+    ~/.tmux: tmux
+    ~/.tmux.conf: tmux/gpakosz/.tmux.conf
+    ~/.tmux.local.conf: tmux.conf.local

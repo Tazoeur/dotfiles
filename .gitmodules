@@ -2,3 +2,13 @@
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
+[submodule "dotbot-apt"]
+	path = dotbot-apt
+	url = https://github.com/bryant1410/dotbot-apt
+	ignore = dirty
+[submodule "oh-my-bash"]
+	path = oh-my-bash
+	url = https://github.com/ohmybash/oh-my-bash.git
+[submodule "tmux/gpakosz"]
+	path = tmux/gpakosz
+	url = git@github.com:gpakosz/.tmux.git
