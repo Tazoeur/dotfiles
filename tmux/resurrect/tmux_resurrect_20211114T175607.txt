@@ -1,3 +1,0 @@
-pane	0	1	1	:*	1	:/home/taz	1	bash	:
-window	0	1	:bash	1	:*	b25e,80x24,0,0,1	:
-state		
