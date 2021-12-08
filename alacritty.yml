@@ -1,5 +1,5 @@
 env:
-    TERM: xterm-256color
+  ERM: xterm-256color
 
 # Display tabs using this many cells (changes require restart)
 tabspaces: 4
@@ -86,9 +86,9 @@ schemes:
       white: '#FFFFFF'
 
 colors: *nord
-window_opacity: 0.87
 
 window:
+  opacity: 0.87
   decorations: none
     #dynamic_title: true
     #dynamic_padding: true
