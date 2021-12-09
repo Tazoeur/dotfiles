@@ -5,6 +5,7 @@
 # alacritty
 # discord
 # telegram
+# bat (not with apt!!)
 
 
 - apt:
@@ -13,6 +14,6 @@
     - vim
     - fzf
     - neovim
-    - bat
+    - ripgrep
 
 # brew install gh

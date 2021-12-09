@@ -4,6 +4,7 @@
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
+    - [bash ~/.dotfiles/fonts/load_fonts.sh, Installing fonts]
 
 - create:
     - ~/.config/alacritty
