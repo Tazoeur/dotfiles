@@ -18,4 +18,4 @@
     ~/.config/nvim: nvim
     ~/.tmux: tmux
     ~/.tmux.conf: tmux/gpakosz/.tmux.conf
-    ~/.tmux.local.conf: tmux.conf.local
+    ~/.tmux.conf.local: tmux.conf.local
