@@ -9,6 +9,11 @@ function start_agent {
     /usr/bin/ssh-add;
 }
 
+function reload_agent {
+	rm $SSH_ENV;
+	start_agent;
+}
+
 # Source SSH settings, if applicable
 if [ -f "${SSH_ENV}" ]; then
     . "${SSH_ENV}" > /dev/null
