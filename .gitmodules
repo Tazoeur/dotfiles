@@ -12,3 +12,6 @@
 [submodule "tmux/gpakosz"]
 	path = tmux/gpakosz
 	url = git@github.com:gpakosz/.tmux.git
+[submodule "nvm"]
+	path = nvm
+	url = git@github.com:nvm-sh/nvm.git
