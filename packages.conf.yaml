@@ -10,10 +10,16 @@
 
 - apt:
     - build-essential
-    - vlc
+    - libssl-dev
+    - curl
+    - wget
     - vim
-    - fzf
     - neovim
+    - vlc
+    - fzf
     - ripgrep
 
+- shell:
+    - [nvm install 16, Installing node 16 (nvm)]
+    - [nvm use 16, Use node 16 (nvm)]
 # brew install gh
