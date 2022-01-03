@@ -6,6 +6,9 @@ source "$HOME/.dotfiles/bash/path.sh"
 # Manage ssh agent and stuff
 source "$HOME/.dotfiles/bash/ssh.sh"
 
+# add some git stuff
+source "$HOME/.dotfiles/bash/git.sh"
+
 # Program-specific tweaks
 source "$HOME/.dotfiles/bash/rust.sh"
 source "$HOME/.dotfiles/bash/nvm.sh"
