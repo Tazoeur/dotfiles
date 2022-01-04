@@ -8,3 +8,8 @@ alias v=nvim
 alias l="ls -lAh"
 alias la="ls -A"
 alias ll="ls -l"
+
+alias g="git"
+alias gcm="git commit -m"
+alias ga="git add"
+alias gst="git status"
