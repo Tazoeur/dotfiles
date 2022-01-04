@@ -13,3 +13,5 @@ alias g="git"
 alias gcm="git commit -m"
 alias ga="git add"
 alias gst="git status"
+
+alias grep="grep --color"
