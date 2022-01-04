@@ -368,7 +368,8 @@ tmux_conf_update_plugins_on_reload=true
 #set -g @plugin 'tmux-plugins/tmux-sensible'
 set -q @plugin 'tmux-plugins/tmux-nord'
 set -g @plugin 'tmux-plugins/tmux-resurrect'
-set -g @plugin 'tmux-plugins/tmux-continuum'
+# comment and comment out the continuum plugin when there is a launching bug.
+#set -g @plugin 'tmux-plugins/tmux-continuum'
 
 set -g @continuum-boot 'on'
 set -g @continuum-restore 'on'
