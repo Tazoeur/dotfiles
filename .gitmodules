@@ -2,10 +2,6 @@
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
-[submodule "dotbot/dotbot-apt"]
-	path = dotbot/dotbot-apt
-	url = https://github.com/bryant1410/dotbot-apt
-	ignore = dirty
 [submodule "oh-my-bash"]
 	path = oh-my-bash
 	url = https://github.com/ohmybash/oh-my-bash.git
@@ -15,11 +11,15 @@
 [submodule "nvm"]
 	path = nvm
 	url = git@github.com:nvm-sh/nvm.git
-[submodule "dotbot/dotbot-brew"]
-	path = dotbot/dotbot-brew
-	url = https://github.com/d12frosted/dotbot-brew.git
-	ignore = dirty
-[submodule "dotbot/dotbot-sudo"]
-	path = dotbot/dotbot-sudo
+[submodule "dotbot-plugins/dotbot-sudo"]
+	path = dotbot-plugins/dotbot-sudo
 	url = https://github.com/DrDynamic/dotbot-sudo.git
+	ignore = dirty
+[submodule "dotbot-plugins/dotbot-apt"]
+	path = dotbot-plugins/dotbot-apt
+	url = https://github.com/bryant1410/dotbot-apt
+	ignore = dirty
+[submodule "dotbot-plugins/dotbot-brew"]
+	path = dotbot-plugins/dotbot-brew
+	url = https://github.com/d12frosted/dotbot-brew.git
 	ignore = dirty
