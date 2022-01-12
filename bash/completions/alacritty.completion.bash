@@ -22,7 +22,6 @@ _alacritty() {
             alacritty)
                 cmd="alacritty"
                 ;;
-            
             create-window)
                 cmd+="__create__window"
                 ;;
