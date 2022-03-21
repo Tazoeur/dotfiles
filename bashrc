@@ -19,3 +19,4 @@ source "$HOME/.dotfiles/bash/keybinding.sh"
 
 # User defined aliases
 source "$HOME/.dotfiles/bash/aliases.sh"
+. "$HOME/.cargo/env"

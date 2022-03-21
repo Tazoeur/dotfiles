@@ -18,6 +18,7 @@
     - vlc
     - fzf
     - ripgrep
+    - tmux
 
 - shell:
     - [nvm install 16, Installing node 16 (nvm)]
