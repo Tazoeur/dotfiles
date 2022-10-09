@@ -7,9 +7,15 @@
 # telegram
 # bat (not with apt!!)
 
+- shell:
+    - [add-apt-repository ppa:neovim-ppa/stable, Adding nvim PPA]
 
 - apt:
     - build-essential
+    - git
+    - unzip
+    - tar
+    - gzip
     - libssl-dev
     - curl
     - wget
