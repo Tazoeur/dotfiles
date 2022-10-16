@@ -19,3 +19,4 @@
     ~/.tmux: tmux
     ~/.tmux.conf: tmux/gpakosz/.tmux.conf
     ~/.tmux.conf.local: tmux.conf.local
+    ~/.config/lazygit/config.yml: git/lazygit-config.yml
