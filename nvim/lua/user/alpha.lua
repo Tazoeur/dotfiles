@@ -21,11 +21,7 @@ dashboard.section.buttons.val = {
   dashboard.button("c", " " .. " Config", ":e ~/.config/nvim/init.lua <CR>"),
   dashboard.button("q", " " .. " Quit", ":qa<CR>"),
 }
-local function footer()
-  return "chrisatmachine.com"
-end
-
-dashboard.section.footer.val = footer()
+dashboard.section.footer.val = ""
 
 dashboard.section.footer.opts.hl = "Type"
 dashboard.section.header.opts.hl = "Include"

@@ -6,6 +6,7 @@
 # discord
 # telegram
 # bat (not with apt!!)
+# lazygit
 
 - shell:
     - [add-apt-repository ppa:neovim-ppa/stable, Adding nvim PPA]
