@@ -13,10 +13,7 @@ alias la="ls -A"
 alias ll="ls -l"
 
 # Git
-alias g="git"
-alias gcm="git commit -m"
-alias ga="git add"
-alias gst="git status"
+alias lg="lazygit"
 
 # Grep
 alias grep="grep --color"
