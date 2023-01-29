@@ -16,6 +16,7 @@
     ~/.config/alacritty/alacritty.yml: alacritty.yml
     ~/.bashrc: bashrc
     ~/.config/nvim: nvim
+    ~/.config/nvim/local/user: nvim_local
     ~/.tmux: tmux
     ~/.tmux.conf: tmux/gpakosz/.tmux.conf
     ~/.tmux.conf.local: tmux.conf.local

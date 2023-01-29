@@ -15,3 +15,6 @@
 [submodule "nvm"]
 	path = nvm
 	url = git@github.com:nvm-sh/nvm.git
+[submodule "nvim"]
+	path = nvim
+	url = https://github.com/AstroNvim/AstroNvim
