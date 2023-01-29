@@ -13,6 +13,12 @@ if not dap_install_status_ok then
 	return
 end
 
+local dap_virtual_status_ok, dap_virtual = pcall(require, "nvim-dap-virtual-text")
+if dap_virtual_status_ok then
+  dap_virtual.setup()
+end
+
+
 dap_install.setup({})
 
 dap_install.config("python", {})

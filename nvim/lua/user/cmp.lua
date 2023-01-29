@@ -97,12 +97,12 @@ cmp.setup({
 		format = function(entry, vim_item)
 			vim_item.kind = kind_icons[vim_item.kind]
 			vim_item.menu = ({
-				nvim_lsp = "",
-				nvim_lua = "",
-				luasnip = "",
-				buffer = "",
-				path = "",
-				emoji = "",
+				nvim_lsp = "ﲳ",
+				nvim_lua = "",
+				luasnip = "",
+				buffer = "﬘",
+				path = "ﱮ",
+				emoji = "😊",
 			})[entry.source.name]
 			return vim_item
 		end,
@@ -111,7 +111,7 @@ cmp.setup({
 		{ name = "nvim_lsp" },
 		{ name = "nvim_lua" },
 		{ name = "luasnip" },
-		{ name = "buffer" },
+		{ name = "buffer", Keyword_length = 4 },
 		{ name = "path" },
 	},
 	confirm_opts = {
