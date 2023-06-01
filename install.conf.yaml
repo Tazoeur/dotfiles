@@ -8,11 +8,25 @@
 
 - create:
     - ~/.config/alacritty
-    - ~/.ssh/agent-environment
+    - ~/.config/alacritty/catppuccin
+    - ~/.config/lazygit
+    - ~/.config/bat/themes
+    - ~/.config/spicetify/Themes
+    - ~/.config/spicetify/Extensions/
 
 - clean: ['~']
 
 - link:
+    ~/.config/alacritty/catppuccin/catppuccin-latte.yml: catppuccin/alacritty/catppuccin-latte.yml
+    ~/.config/alacritty/catppuccin/catppuccin-mocha.yml: catppuccin/alacritty/catppuccin-mocha.yml
+    ~/.config/alacritty/catppuccin/catppuccin-frappe.yml: catppuccin/alacritty/catppuccin-frappe.yml
+    ~/.config/alacritty/catppuccin/catppuccin-macchiato.yml: catppuccin/alacritty/catppuccin-macchiato.yml
+    ~/.config/bat/themes/Catppuccin-frappe.tmTheme: catppuccin/bat/Catppuccin-frappe.tmTheme
+    ~/.config/bat/themes/Catppuccin-latte.tmTheme: catppuccin/bat/Catppuccin-latte.tmTheme
+    ~/.config/bat/themes/Catppuccin-macchiato.tmTheme: catppuccin/bat/Catppuccin-macchiato.tmTheme
+    ~/.config/bat/themes/Catppuccin-mocha.tmTheme: catppuccin/bat/Catppuccin-mocha.tmTheme
+    ~/.config/spicetify/Themes/catppuccin-macchiato: catppuccin/spicetify/catppuccin-macchiato
+    ~/.config/spicetify/Extensions/catppuccin-macchiato.js: catppuccin/spicetify/js/catppuccin-macchiato.js
     ~/.config/alacritty/alacritty.yml: alacritty.yml
     ~/.bashrc: bashrc
     ~/.config/nvim: nvim
@@ -21,3 +35,6 @@
     ~/.tmux.conf: tmux/gpakosz/.tmux.conf
     ~/.tmux.conf.local: tmux.conf.local
     ~/.config/lazygit/config.yml: git/lazygit-config.yml
+
+- shell:
+    - [batcat cache --build, Building bat cache]

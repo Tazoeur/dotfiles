@@ -339,6 +339,9 @@ set -g history-limit 10000
 # move status line to top
 #set -g status-position top
 
+# force 255color
+set -g default-terminal "xterm-256color"
+set-option -ga terminal-overrides ",xterm-256color:Tc"
 # -- tpm -----------------------------------------------------------------------
 
 # while I don't use tpm myself, many people requested official support so here
@@ -363,17 +366,24 @@ tmux_conf_update_plugins_on_reload=true
 
 # to enable a plugin, use the 'set -g @plugin' syntax:
 # visit https://github.com/tmux-plugins for available plugins
-#set -g @plugin 'tmux-plugins/tmux-copycat'
-#set -g @plugin 'tmux-plugins/tmux-cpu'
-#set -g @plugin 'tmux-plugins/tmux-sensible'
-set -q @plugin 'tmux-plugins/tmux-nord'
-set -g @plugin 'tmux-plugins/tmux-resurrect'
+# set -g @plugin 'tmux-plugins/tmux-copycat'
+# set -g @plugin 'tmux-plugins/tmux-cpu'
+# set -g @plugin 'tmux-plugins/tmux-sensible'
+# set -q @plugin 'tmux-plugins/tmux-nord'
+# set -g @plugin 'tmux-plugins/tmux-resurrect'
+set -g @plugin 'catppuccin/tmux'
+
 # comment and comment out the continuum plugin when there is a launching bug.
-#set -g @plugin 'tmux-plugins/tmux-continuum'
+# set -g @plugin 'tmux-plugins/tmux-continuum'
 
 set -g @continuum-boot 'on'
 set -g @continuum-restore 'on'
-#set -g @resurrect-strategy-vim 'session'
+set -g @catppuccin_flavour 'macchiato' # default to 'mocha'
+set -g @catppuccin_user "on"
+set -g @catppuccin_host "on"
+set -g @catppuccin_host_icon "🖥️"
+
+# set -g @resurrect-strategy-vim 'session'
 
 
 # -- custom variables ----------------------------------------------------------

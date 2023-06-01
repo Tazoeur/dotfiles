@@ -27,3 +27,26 @@ bind -m vi-insert "\C-l.":clear-screen
 bind -m vi-insert "\C-w.":backward-kill-word
 
 [ -f "/home/taz/.ghcup/env" ] && source "/home/taz/.ghcup/env" # ghcup-env
+
+# todo: move me elsewhere
+# Load pyenv automatically
+
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+# Load pyenv-virtualenv automatically
+eval "$(pyenv virtualenv-init -)"
+
+# pip bash completion start
+_pip_completion()
+{
+    COMPREPLY=( $( COMP_WORDS="${COMP_WORDS[*]}" \
+                   COMP_CWORD=$COMP_CWORD \
+                   PIP_AUTO_COMPLETE=1 $1 2>/dev/null ) )
+}
+complete -o default -F _pip_completion pip
+# pip bash completion end
+
+if [ -d ~/.spicetify ]; then
+    export PATH=$PATH:~/.spicetify
+fi

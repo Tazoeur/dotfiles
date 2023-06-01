@@ -1,3 +1,7 @@
+if [ $(ls ~/.local/share/fonts/Hack* | wc -l) > 1 ];then
+	echo "Fonts are already present, skipping."
+	exit 0
+fi
 mkdir /tmp/fonts
 cp "$HOME/.dotfiles/fonts/Hack.zip" /tmp/fonts
 # unzip Hack.zip
