@@ -11,8 +11,6 @@
     - ~/.config/alacritty/catppuccin
     - ~/.config/lazygit
     - ~/.config/bat/themes
-    - ~/.config/spicetify/Themes
-    - ~/.config/spicetify/Extensions/
 
 - clean: ['~']
 
@@ -25,12 +23,9 @@
     ~/.config/bat/themes/Catppuccin-latte.tmTheme: catppuccin/bat/Catppuccin-latte.tmTheme
     ~/.config/bat/themes/Catppuccin-macchiato.tmTheme: catppuccin/bat/Catppuccin-macchiato.tmTheme
     ~/.config/bat/themes/Catppuccin-mocha.tmTheme: catppuccin/bat/Catppuccin-mocha.tmTheme
-    ~/.config/spicetify/Themes/catppuccin-macchiato: catppuccin/spicetify/catppuccin-macchiato
-    ~/.config/spicetify/Extensions/catppuccin-macchiato.js: catppuccin/spicetify/js/catppuccin-macchiato.js
     ~/.config/alacritty/alacritty.yml: alacritty.yml
     ~/.bashrc: bashrc
-    ~/.config/nvim: nvim
-    ~/.config/nvim/lua/user: nvim_local
+    ~/.config/nvim: nvim_kickstart
     ~/.tmux: tmux
     ~/.tmux.conf: tmux/gpakosz/.tmux.conf
     ~/.tmux.conf.local: tmux.conf.local

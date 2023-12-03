@@ -1,4 +1,4 @@
-if [ $(ls ~/.local/share/fonts/Hack* | wc -l) > 1 ];then
+if (( $(ls ~/.local/share/fonts/Hack* | wc -l) > 1 ));then
 	echo "Fonts are already present, skipping."
 	exit 0
 fi

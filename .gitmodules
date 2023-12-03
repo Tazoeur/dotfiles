@@ -15,21 +15,21 @@
 [submodule "nvm"]
 	path = nvm
 	url = git@github.com:nvm-sh/nvm.git
-[submodule "nvim"]
-	path = nvim
-	url = https://github.com/AstroNvim/AstroNvim
 [submodule "catppuccin/alacritty"]
 	path = catppuccin/alacritty
 	url = git@github.com:catppuccin/alacritty.git
 [submodule "catppuccin/bat"]
 	path = catppuccin/bat
 	url = git@github.com:catppuccin/bat.git
-[submodule "catppuccin/spicetify"]
-	path = catppuccin/spicetify
-	url = git@github.com:catppuccin/spicetify.git
 [submodule "catppuccin/gtk"]
 	path = catppuccin/gtk
 	url = git@github.com:catppuccin/gtk.git
 [submodule "catppuccin/cursors"]
 	path = catppuccin/cursors
 	url = https://github.com/catppuccin/cursors.git
+[submodule "neovim"]
+	path = neovim
+	url = git@github.com:neovim/neovim.git
+[submodule "nvim_kickstart"]
+	path = nvim_kickstart
+	url = https://github.com/nvim-lua/kickstart.nvim.git
