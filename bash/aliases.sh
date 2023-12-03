@@ -28,7 +28,7 @@ git-remove-merged () {
 alias grep="grep --color"
 
 # batcat
-alias cat="batcat --theme=Catppuccin-macchiato"
+alias bat="batcat --theme=Catppuccin-macchiato"
 
 # load env variables
 alias loadenv="[ -f .env ] && set -o allexport && source .env && set +o allexport"

@@ -31,11 +31,13 @@ bind -m vi-insert "\C-w.":backward-kill-word
 # todo: move me elsewhere
 # Load pyenv automatically
 
+if [ -f $HOME/.pyenv ]; then
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 # Load pyenv-virtualenv automatically
 eval "$(pyenv virtualenv-init -)"
+fi
 
 # pip bash completion start
 _pip_completion()
