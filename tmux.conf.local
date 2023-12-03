@@ -39,12 +39,6 @@ tmux_conf_24b_colour=true
 
 # default theme
 
-#nord_yellow="#ebcb8b"
-#nord_green="#a3be8c"
-#nord_orange="#d08770"
-#nord_red="#bf616a"
-#nord_purple="#b48ead"
-
 tmux_color_stress="#8fbcbb"
 tmux_color_session="#81a1c1"
 tmux_color_pane_active_tab="#88c0d0"
@@ -366,10 +360,7 @@ tmux_conf_update_plugins_on_reload=true
 
 # to enable a plugin, use the 'set -g @plugin' syntax:
 # visit https://github.com/tmux-plugins for available plugins
-# set -g @plugin 'tmux-plugins/tmux-copycat'
-# set -g @plugin 'tmux-plugins/tmux-cpu'
 # set -g @plugin 'tmux-plugins/tmux-sensible'
-# set -q @plugin 'tmux-plugins/tmux-nord'
 # set -g @plugin 'tmux-plugins/tmux-resurrect'
 set -g @plugin 'catppuccin/tmux'
 
@@ -378,10 +369,29 @@ set -g @plugin 'catppuccin/tmux'
 
 set -g @continuum-boot 'on'
 set -g @continuum-restore 'on'
+
 set -g @catppuccin_flavour 'macchiato' # default to 'mocha'
-set -g @catppuccin_user "on"
-set -g @catppuccin_host "on"
-set -g @catppuccin_host_icon "🖥️"
+set -g @catppuccin_window_tabs_enabled on # should stay to 'on' otherwise the plugin is shit. 
+set -g @catppuccin_date_time "%Y-%m-%d %H:%M"
+set -g @catppuccin_window_left_separator ""
+set -g @catppuccin_window_right_separator " "
+set -g @catppuccin_window_middle_separator "█ "
+set -g @catppuccin_window_number_position "left"
+
+set -g @catppuccin_window_default_fill "number"
+set -g @catppuccin_window_default_text "#W"
+
+set -g @catppuccin_window_current_fill "number"
+set -g @catppuccin_window_current_text "#W"
+
+set -g @catppuccin_status_modules "directory user host session"
+set -g @catppuccin_status_left_separator  " "
+set -g @catppuccin_status_right_separator ""
+set -g @catppuccin_status_right_separator_inverse "no"
+set -g @catppuccin_status_fill "icon"
+set -g @catppuccin_status_connect_separator "no"
+
+set -g @catppuccin_directory_text "#{pane_current_path}"
 
 # set -g @resurrect-strategy-vim 'session'
 

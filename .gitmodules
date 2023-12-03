@@ -27,3 +27,6 @@
 [submodule "catppuccin/spicetify"]
 	path = catppuccin/spicetify
 	url = git@github.com:catppuccin/spicetify.git
+[submodule "catppuccin/cursors"]
+	path = catppuccin/cursors
+	url = https://github.com/catppuccin/cursors.git
