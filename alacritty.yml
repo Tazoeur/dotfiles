@@ -27,14 +27,15 @@ font:
     style: Italic
 
 import:
-  - ~/.config/alacritty/catppuccin/catppuccin-macchiato.yml
+  # - ~/.config/alacritty/catppuccin/catppuccin-macchiato.yml
+  - ~/.config/alacritty/rose-pine.yml
   # - ~/.config/alacritty/catppuccin/catppuccin-mocha.yml
   # - ~/.config/alacritty/catppuccin/catppuccin-frappe.yml
   # - ~/.config/alacritty/catppuccin/catppuccin-latte.yml
 
 
 window:
-  opacity: 0.87
+  opacity: 0.91
   decorations: none
     #dynamic_title: true
     #dynamic_padding: true
