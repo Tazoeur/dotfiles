@@ -37,38 +37,10 @@ tmux_conf_new_session_prompt=false
 #  - false (default)
 tmux_conf_24b_colour=true
 
-# default theme
-
-tmux_color_stress="#8fbcbb"
-tmux_color_session="#81a1c1"
-tmux_color_pane_active_tab="#88c0d0"
-tmux_color_pane_background="#2e3440"
-tmux_color_pane_last_active_tab="#4c566a"
-tmux_color_pane_tab="#434c5e"
-tmux_color_font_on_dark="#d8dee9"
-tmux_color_font_on_bright=$tmux_color_pane_background
-
-tmux_conf_theme_colour_1=$tmux_color_pane_background
-tmux_conf_theme_colour_2=$tmux_color_pane_last_active_tab
-tmux_conf_theme_colour_3=$tmux_color_font_on_dark
-tmux_conf_theme_colour_4=$tmux_color_pane_active_tab
-tmux_conf_theme_colour_5=$tmux_color_stress
-tmux_conf_theme_colour_6=$tmux_color_font_on_bright #session name font
-tmux_conf_theme_colour_7="#eceff4"    # white
-tmux_conf_theme_colour_8="#3b4252"    # dark gray
-tmux_conf_theme_colour_9=$tmux_color_stress
-tmux_conf_theme_colour_10="#b48ead"   # pink
-tmux_conf_theme_colour_11="#a3be8c"   # green
-tmux_conf_theme_colour_12=$tmux_color_font_on_dark # right panel font
-tmux_conf_theme_colour_13=$tmux_color_font_on_bright # username font
-tmux_conf_theme_colour_14=$tmux_color_font_on_bright # hostname font
-tmux_conf_theme_colour_15=$tmux_color_pane_background
-tmux_conf_theme_colour_16=$tmux_color_pane_active_tab # username bg
-tmux_conf_theme_colour_17=$nord_yellow # hostname bg
 
 # window style
-tmux_conf_theme_window_fg="default"
-tmux_conf_theme_window_bg="default"
+# tmux_conf_theme_window_fg="default"
+# tmux_conf_theme_window_bg="default"
 
 # highlight focused pane (tmux >= 2.1), possible values are:
 #   - true
@@ -176,10 +148,6 @@ tmux_conf_theme_window_status_last_bg="$tmux_conf_theme_colour_2"
 tmux_conf_theme_window_status_last_attr="none"
 
 # status left/right sections separators
-#tmux_conf_theme_left_separator_main=""
-#tmux_conf_theme_left_separator_sub="|"
-#tmux_conf_theme_right_separator_main=""
-#tmux_conf_theme_right_separator_sub="|"
 tmux_conf_theme_left_separator_main="\uE0B0"  # /!\ you don't need to install Powerline
 tmux_conf_theme_left_separator_sub="\uE0B1"   #   you only need fonts patched with
 tmux_conf_theme_right_separator_main="\uE0B2" #   Powerline symbols or the standalone
@@ -362,19 +330,25 @@ tmux_conf_update_plugins_on_reload=true
 # visit https://github.com/tmux-plugins for available plugins
 # set -g @plugin 'tmux-plugins/tmux-sensible'
 # set -g @plugin 'tmux-plugins/tmux-resurrect'
-set -g @plugin 'catppuccin/tmux'
 
 # comment and comment out the continuum plugin when there is a launching bug.
-# set -g @plugin 'tmux-plugins/tmux-continuum'
+set -g @plugin 'tmux-plugins/tmux-continuum'
 
 set -g @continuum-boot 'on'
 set -g @continuum-restore 'on'
+
+
+# -- Themes --------------------------------------------------------------------
+# Don't forget to disable gpakosz theme when using an external plugin's theme
+tmux_conf_theme=disabled
+
+set -g @plugin 'catppuccin/tmux'
 
 set -g @catppuccin_flavour 'macchiato' # default to 'mocha'
 set -g @catppuccin_window_tabs_enabled on # should stay to 'on' otherwise the plugin is shit. 
 set -g @catppuccin_date_time "%Y-%m-%d %H:%M"
 set -g @catppuccin_window_left_separator ""
-set -g @catppuccin_window_right_separator " "
+set -g @catppuccin_window_right_separator " "
 set -g @catppuccin_window_middle_separator "█ "
 set -g @catppuccin_window_number_position "left"
 
@@ -392,9 +366,20 @@ set -g @catppuccin_status_fill "icon"
 set -g @catppuccin_status_connect_separator "no"
 
 set -g @catppuccin_directory_text "#{pane_current_path}"
-
-# set -g @resurrect-strategy-vim 'session'
-
+# set -g @plugin 'rose-pine/tmux'
+#
+# set -g @rose_pine_variant 'main' # Options are 'main', 'moon' or 'dawn'
+# set -g @rose_pine_host 'on' # Enables hostname in the status bar
+# set -g @rose_pine_date_time '%Y-%m-%d %H:%M' # It accepts the date UNIX command format (man date for info)
+# set -g @rose_pine_user 'on' # Turn on the username component in the statusbar
+# set -g @rose_pine_directory 'on' # Turn on the current folder component in the status bar
+# set -g @rose_pine_session_icon '' # Changes the default icon to the left of the session name
+# set -g @rose_pine_current_window_icon '' # Changes the default icon to the left of the active window name
+# set -g @rose_pine_folder_icon '' # Changes the default icon to the left of the current directory folder
+# set -g @rose_pine_username_icon '' # Changes the default icon to the right of the hostname
+# set -g @rose_pine_hostname_icon '󰒋' # Changes the default icon to the right of the hostname
+# set -g @rose_pine_date_time_icon '󰃰' # Changes the default icon to the right of the date module
+# set -g @rose_pine_window_status_separator "  " # Changes the default icon that appears between window names
 
 # -- custom variables ----------------------------------------------------------
 
