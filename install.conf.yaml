@@ -8,22 +8,12 @@
 
 - create:
     - ~/.config/alacritty
-    - ~/.config/alacritty/catppuccin
     - ~/.config/lazygit
-    - ~/.config/bat/themes
 
 - clean: ['~']
 
 - link:
-    ~/.config/alacritty/catppuccin/catppuccin-latte.yml: catppuccin/alacritty/catppuccin-latte.yml
-    ~/.config/alacritty/catppuccin/catppuccin-mocha.yml: catppuccin/alacritty/catppuccin-mocha.yml
-    ~/.config/alacritty/catppuccin/catppuccin-frappe.yml: catppuccin/alacritty/catppuccin-frappe.yml
-    ~/.config/alacritty/catppuccin/catppuccin-macchiato.yml: catppuccin/alacritty/catppuccin-macchiato.yml
-    ~/.config/bat/themes/Catppuccin-frappe.tmTheme: catppuccin/bat/Catppuccin-frappe.tmTheme
-    ~/.config/bat/themes/Catppuccin-latte.tmTheme: catppuccin/bat/Catppuccin-latte.tmTheme
-    ~/.config/bat/themes/Catppuccin-macchiato.tmTheme: catppuccin/bat/Catppuccin-macchiato.tmTheme
-    ~/.config/bat/themes/Catppuccin-mocha.tmTheme: catppuccin/bat/Catppuccin-mocha.tmTheme
-    ~/.config/alacritty/alacritty.yml: alacritty.yml
+    ~/.config/alacritty/alacritty.toml: alacritty.toml
     ~/.bashrc: bashrc
     ~/.config/nvim: nvim_kickstart
     ~/.tmux: tmux
