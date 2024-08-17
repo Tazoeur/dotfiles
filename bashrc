@@ -12,6 +12,7 @@ source "$HOME/.dotfiles/bash/git.sh"
 # Program-specific tweaks
 source "$HOME/.dotfiles/bash/rust.sh"
 source "$HOME/.dotfiles/bash/nvm.sh"
+source "$HOME/.dotfiles/bash/fzf.sh"
 
 # Completion and keybindings
 source "$HOME/.dotfiles/bash/completion.sh"
@@ -27,11 +28,7 @@ bind -m vi-command ".":insert-last-argument
 bind -m vi-insert "\C-l.":clear-screen
 bind -m vi-insert "\C-w.":backward-kill-word
 
-[ -f "/home/taz/.ghcup/env" ] && source "/home/taz/.ghcup/env" # ghcup-env
-
-# todo: move me elsewhere
 # Load pyenv automatically
-
 if [ -f $HOME/.pyenv ]; then
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"

@@ -20,6 +20,8 @@
     ~/.tmux.conf: tmux/gpakosz/.tmux.conf
     ~/.tmux.conf.local: tmux.conf.local
     ~/.config/lazygit/config.yml: git/lazygit-config.yml
+    ~/.config/bat/themes/rose-pine.tmTheme: rose-pine/bat/rose-pine.tmTheme
+    ~/.gitconfig: git/gitconfig
 
 - shell:
     - [batcat cache --build, Building bat cache]

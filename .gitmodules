@@ -33,3 +33,9 @@
 [submodule "nvim_kickstart"]
 	path = nvim_kickstart
 	url = https://github.com/nvim-lua/kickstart.nvim.git
+[submodule "fzf-git.sh"]
+	path = fzf-git.sh
+	url = git@github.com:junegunn/fzf-git.sh.git
+[submodule "rose-pine/bat"]
+	path = rose-pine/bat
+	url = git@github.com:rose-pine/sublime-text.git

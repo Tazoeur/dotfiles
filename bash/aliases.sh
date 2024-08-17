@@ -28,7 +28,7 @@ git-remove-merged () {
 alias grep="grep --color"
 
 # batcat
-alias bat="batcat --theme=Catppuccin-macchiato"
+alias bat="batcat"
 
 # load env variables
 alias loadenv="[ -f .env ] && set -o allexport && source .env && set +o allexport"
@@ -36,3 +36,8 @@ alias loadenv="[ -f .env ] && set -o allexport && source .env && set +o allexpor
 # dfimage
 alias dfimage="docker run -v /var/run/docker.sock:/var/run/docker.sock --rm ghcr.io/laniksj/dfimage"
 
+# ---- Eza (better ls) -----
+alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
+
+
+export BAT_THEME=rose-pine

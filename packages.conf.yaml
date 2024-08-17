@@ -1,19 +1,11 @@
-# todo:
-# brew
-# spotify
-# vscode
-# alacritty
-# discord
-# telegram
-# bat (not with apt!!)
-# lazygit
+- apt:
+    - software-properties-common
+    - build-essential
 
 - shell:
     - [add-apt-repository ppa:neovim-ppa/stable, Adding nvim PPA]
 
 - apt:
-    - build-essential
-    - git
     - unzip
     - tar
     - gzip
@@ -26,8 +18,11 @@
     - fzf
     - ripgrep
     - tmux
+    - bat
+    - eza
 
 - shell:
-    - [nvm install 16, Installing node 16 (nvm)]
-    - [nvm use 16, Use node 16 (nvm)]
-# brew install gh
+    - [curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh, Installing rust]
+    - [cargo install alacritty, Installing alacritty]
+    - [bash ./scripts/install-neovim.sh, Installing NeoVim]
+    - [bash ./scripts/install-lazygit.sh, Installing lazygit]
