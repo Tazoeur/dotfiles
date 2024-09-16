@@ -12,3 +12,8 @@ poetry_bin="/home/taz/local/bin"
 if [ -d $poetry_bin ]; then
 	export PATH="$PATH:$poetry_bin"
 fi
+
+if [ -d "$HOME/.bin/platform-tools" ] ; then
+    PATH="$HOME/.bin/platform-tools:$PATH" 
+fi
+[ -f "/home/taz/.ghcup/env" ] && source "/home/taz/.ghcup/env" # ghcup-env
