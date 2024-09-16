@@ -21,6 +21,7 @@ source "$HOME/.dotfiles/bash/keybinding.sh"
 source "$HOME/.dotfiles/bash/aliases.sh"
 source "$HOME/.dotfiles/bash/docker-aliases.sh"
 . "$HOME/.cargo/env"
+export AWS_DEFAULT_PROFILE=wasabi
 
 set -o vi
 bind -m vi-command ".":insert-last-argument
