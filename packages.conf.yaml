@@ -22,9 +22,9 @@
     - fzf
     - ripgrep
     - tmux
-    - bat
 
 - shell:
+    - [bash ./scripts/install-bat.sh, Installing bat (cat with wings)]
     - [bash ./scripts/install-git-delta.sh, Installing git delta]
     - [bash ./scripts/install-neovim.sh, Installing NeoVim]
     - [bash ./scripts/install-lazygit.sh, Installing lazygit]
