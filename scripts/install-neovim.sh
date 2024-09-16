@@ -2,7 +2,7 @@
 
 set -eux
 
-cd ~/.dotfiles/neovim
+cd ./neovim
 make CMAKE_BUILD_TYPE=RelWithDebInfo
-sudo make install
+make install
 cd -

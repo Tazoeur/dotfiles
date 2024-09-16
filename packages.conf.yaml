@@ -1,3 +1,7 @@
+- defaults:
+    shell:
+        stderr: true
+
 - apt:
     - software-properties-common
     - build-essential
@@ -19,10 +23,8 @@
     - ripgrep
     - tmux
     - bat
-    - eza
 
 - shell:
-    - [curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh, Installing rust]
-    - [cargo install alacritty, Installing alacritty]
+    - [bash ./scripts/install-git-delta.sh, Installing git delta]
     - [bash ./scripts/install-neovim.sh, Installing NeoVim]
     - [bash ./scripts/install-lazygit.sh, Installing lazygit]

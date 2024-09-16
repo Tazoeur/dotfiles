@@ -38,4 +38,4 @@
 	url = git@github.com:junegunn/fzf-git.sh.git
 [submodule "rose-pine/bat"]
 	path = rose-pine/bat
-	url = git@github.com:rose-pine/sublime-text.git
+	url = git@github.com:rose-pine/tm-theme.git
