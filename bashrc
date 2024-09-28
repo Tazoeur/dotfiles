@@ -1,4 +1,5 @@
 source "$HOME/.dotfiles/bash/oh-my-bash.sh"
+export TERM="tmux-256color"
 
 # add paths to PATH
 source "$HOME/.dotfiles/bash/path.sh"

@@ -1,21 +1,21 @@
 import = ["~/.dotfiles/rose-pine/alacritty/rose-pine.toml"]
 
 [env]
-ENV = "xterm-256color"
+TERM= "tmux-256color"
 
 [font]
 size = 11.0
 
 [font.bold]
-family = "Hack Nerd Font"
+family = "CaskaydiaCoveNerdFontMono"
 style = "Bold"
 
 [font.italic]
-family = "Hack Nerd Font"
+family = "CaskaydiaCoveNerdFontMono"
 style = "Italic"
 
 [font.normal]
-family = "Hack Nerd Font"
+family = "CaskaydiaCoveNerdFontMono"
 style = "Regular"
 
 [window]

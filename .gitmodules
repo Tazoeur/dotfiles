@@ -9,9 +9,6 @@
 [submodule "oh-my-bash"]
 	path = oh-my-bash
 	url = https://github.com/ohmybash/oh-my-bash.git
-[submodule "tmux/gpakosz"]
-	path = tmux/gpakosz
-	url = git@github.com:gpakosz/.tmux.git
 [submodule "nvm"]
 	path = nvm
 	url = git@github.com:nvm-sh/nvm.git
@@ -32,10 +29,13 @@
 	url = git@github.com:neovim/neovim.git
 [submodule "nvim_kickstart"]
 	path = nvim_kickstart
-	url = https://github.com/nvim-lua/kickstart.nvim.git
+	url = https://github.com/Tazoeur/kickstart.nvim.git
 [submodule "fzf-git.sh"]
 	path = fzf-git.sh
 	url = git@github.com:junegunn/fzf-git.sh.git
 [submodule "rose-pine/bat"]
 	path = rose-pine/bat
 	url = git@github.com:rose-pine/tm-theme.git
+[submodule "tmux/tpm"]
+	path = tmux/tpm
+	url = https://github.com/tmux-plugins/tpm
