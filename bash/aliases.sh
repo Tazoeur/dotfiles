@@ -7,10 +7,6 @@ alias vim=nvim
 alias vi=nvim
 alias v=nvim
 
-# ls
-alias l="ls -lAh"
-alias la="ls -A"
-alias ll="ls -l"
 
 # Git
 alias lg="lazygit"
@@ -37,7 +33,11 @@ alias loadenv="[ -f .env ] && set -o allexport && source .env && set +o allexpor
 alias dfimage="docker run -v /var/run/docker.sock:/var/run/docker.sock --rm ghcr.io/laniksj/dfimage"
 
 # ---- Eza (better ls) -----
-alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
+alias ls="eza --color=always  --git  --icons=always --oneline"
+alias ll="ls -lAh"
+alias l="ll"
+alias la="ls -A"
+alias lt="ls --tree -L 2"
 
 
 export BAT_THEME=rose-pine
