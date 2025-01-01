@@ -3,7 +3,7 @@
 # version = "0.99.1"
 
 def create_left_prompt [] {
-    let dir = match (do --ignore-shell-errors { $env.PWD | path relative-to $nu.home-path }) {
+    let dir = match (do --ignore-errors { $env.PWD | path relative-to $nu.home-path }) {
         null => $env.PWD
         '' => '~'
         $relative_pwd => ([~ $relative_pwd] | path join)
@@ -108,7 +108,6 @@ $env.NU_PLUGIN_DIRS = [
 
 $env.VIRTUAL_ENV_DISABLE_PROMPT = true
 $env.AWS_DEFAULT_PROFILE = "wasabi"
-$env.JIRA_API_TOKEN = "bite"
 $env.GITHUB_TOKEN = "bite"
 $env.BAT_THEME = "rose-pine"
 

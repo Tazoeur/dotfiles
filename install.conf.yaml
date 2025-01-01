@@ -4,18 +4,17 @@
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
-    - [bash ~/.dotfiles/fonts/load_fonts.sh, Installing fonts]
 
-- shell:
-    - [curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y, Installing rust]
-    - [cargo install alacritty, Installing alacritty]
-    # - [cargo install eza, Installing eza]
-    - [cargo install nu, Installing nushell]
-    # - [cargo install nu, Installing nu plugin(s)]
+# - shell:
+#    - [curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y, Installing rust]
+#    - [cargo install alacritty, Installing alacritty]
+#    - [cargo install nu, Installing nushell]
 
 - create:
     - ~/.config/alacritty
     - ~/.config/lazygit
+    - ~/.config/bat/themes
+    - ~/.config/nushell
 
 - clean: ['~']
 
@@ -29,8 +28,7 @@
     ~/.gitconfig: git/gitconfig
     ~/.config/nushell/config.nu: ./nushell/config.nu
     ~/.config/nushell/env.nu: ./nushell/env.nu
-
-
+    ~/.oh-my-posh.nu: ./oh-my-posh/oh-my-posh.nu
 
 - shell:
     - [bat cache --clear, Cleaning bat cache]

@@ -947,7 +947,7 @@ do --env {
 }
 
 # Ask user input in order to chose an element from a list
-def chose_one_in_list [xs: list<string>, message: string = "Type your choice (Ctrl+c to quit)"] -> string {
+def chose_one_in_list [xs: list<string>, message: string = "Type your choice (Ctrl+c to quit)"] {
     $xs | enumerate | each { |elt| print $"\t * [($elt.index + 1)] ($elt.item)" }
     mut value = 0
     mut is_valid = false

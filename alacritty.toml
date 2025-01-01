@@ -1,4 +1,3 @@
-import = ["~/.dotfiles/rose-pine/alacritty/rose-pine.toml"]
 
 [env]
 TERM = "tmux-256color"
@@ -22,5 +21,10 @@ style = "Regular"
 decorations = "none"
 opacity = 0.91
 
-[shell]
+[general]
+import = ["~/.dotfiles/rose-pine/alacritty/rose-pine.toml"]
+
+[terminal]
+
+[terminal.shell]
 program = "nu"
