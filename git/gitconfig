@@ -13,7 +13,7 @@
 	eol = lf
 
 [pull]
-	rebase = false
+	rebase = true
 
 [rebase]
 	autosquash = true

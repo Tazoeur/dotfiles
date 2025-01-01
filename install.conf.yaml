@@ -9,7 +9,9 @@
 - shell:
     - [curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y, Installing rust]
     - [cargo install alacritty, Installing alacritty]
-    - [cargo install eza, Installing eza]
+    # - [cargo install eza, Installing eza]
+    - [cargo install nu, Installing nushell]
+    # - [cargo install nu, Installing nu plugin(s)]
 
 - create:
     - ~/.config/alacritty
@@ -25,6 +27,10 @@
     ~/.config/lazygit/config.yml: git/lazygit-config.yml
     ~/.config/bat/themes/rose-pine.tmTheme: rose-pine/bat/dist/themes/rose-pine.tmTheme
     ~/.gitconfig: git/gitconfig
+    ~/.config/nushell/config.nu: ./nushell/config.nu
+    ~/.config/nushell/env.nu: ./nushell/env.nu
+
+
 
 - shell:
     - [bat cache --clear, Cleaning bat cache]

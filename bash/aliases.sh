@@ -39,5 +39,8 @@ alias l="ll"
 alias la="ls -A"
 alias lt="ls --tree -L 2"
 
+# docker
+alias ld="lazydocker"
+
 
 export BAT_THEME=rose-pine
