@@ -3,3 +3,5 @@
 tmux/plugins/
 tmux/resurrect
 nvim/plugin
+**/secret*
+!**/secret*.example*

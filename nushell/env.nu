@@ -3,7 +3,7 @@
 # version = "0.99.1"
 
 def create_left_prompt [] {
-    let dir = match (do --ignore-shell-errors { $env.PWD | path relative-to $nu.home-path }) {
+    let dir = match (do { $env.PWD | path relative-to $nu.home-path }) {
         null => $env.PWD
         '' => '~'
         $relative_pwd => ([~ $relative_pwd] | path join)
@@ -108,18 +108,23 @@ $env.NU_PLUGIN_DIRS = [
 
 $env.VIRTUAL_ENV_DISABLE_PROMPT = true
 $env.AWS_DEFAULT_PROFILE = "wasabi"
-$env.JIRA_API_TOKEN = "bite"
-$env.GITHUB_TOKEN = "bite"
 $env.BAT_THEME = "rose-pine"
 
 $env.CARGO_HOME = "~/.cargo" | path expand
 $env.PYENV_ROOT = "~/.pyenv" | path expand
+
+# Use the module; its export-env block sets variables
+const secrets_file = ($nu.home-path | path join ".dotfiles" "nushell" "secrets.nu")
+if ($secrets_file | path exists) {
+  source $secrets_file
+}
 $env.PATH = (
     $env.PATH
     | split row (char esep) 
     | append ($env.CARGO_HOME | path join bin)
     | append ($env.PYENV_ROOT | path join .local bin)
     | append ($env.HOME | path join .local bin)
+    | append ("/usr/local/go/bin" | path expand)
     | uniq
 )
 $env.LS_COLORS = (vivid generate snazzy | str trim)

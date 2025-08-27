@@ -223,11 +223,6 @@ $env.config = {
         use_ls_colors: true # set this to true to enable file/path/directory completions using LS_COLORS
     }
 
-    filesize: {
-        metric: false # true => KB, MB, GB (ISO standard), false => KiB, MiB, GiB (Windows standard)
-        format: "auto" # b, kb, kib, mb, mib, gb, gib, tb, tib, pb, pib, eb, eib, auto
-    }
-
     cursor_shape: {
         emacs: line # block, underscore, line, blink_block, blink_underscore, blink_line, inherit to skip setting cursor shape (line is the default)
         vi_insert: block # block, underscore, line, blink_block, blink_underscore, blink_line, inherit to skip setting cursor shape (block is the default)
@@ -890,13 +885,6 @@ $env.config = {
             event: { edit: cutselection }
             # event: { edit: cutselectionsystem }
         }
-        # {
-        #     name: paste_system
-        #     modifier: control_shift
-        #     keycode: char_v
-        #     mode: emacs
-        #     event: { edit: pastesystem }
-        # }
         {
             name: select_all
             modifier: control_shift
@@ -919,6 +907,7 @@ alias gst = git status
 alias ga = git add
 alias gc = git commit
 alias gd = git diff
+alias k = kubectl
 
 source ~/.oh-my-posh.nu
 do --env {
@@ -947,7 +936,7 @@ do --env {
 }
 
 # Ask user input in order to chose an element from a list
-def chose_one_in_list [xs: list<string>, message: string = "Type your choice (Ctrl+c to quit)"] -> string {
+def chose_one_in_list [xs: list<string>, message: string = "Type your choice (Ctrl+c to quit)"] {
     $xs | enumerate | each { |elt| print $"\t * [($elt.index + 1)] ($elt.item)" }
     mut value = 0
     mut is_valid = false
@@ -979,7 +968,7 @@ def chose_one_in_list [xs: list<string>, message: string = "Type your choice (Ct
 # he wants to use.
 def venv_activate [] {
     use std log
-    let venvs = (ls | where type == dir | where ($it.name | str contains "venv") | get name)
+    let venvs = (ls -a | where type == dir | where ($it.name | str contains "venv") | get name)
     if ( $venvs | is-empty ) {
         log warning "There are no virtualenv in this folder"
     } else {
@@ -995,16 +984,4 @@ def venv_activate [] {
         }
     }
 }
-#const new_keybindings = [
-#    {
-#        name: insert_last_token
-#        modifier: alt
-#        keycode: char_.
-#        mode: [emacs vi_normal vi_insert]
-#        event: [
-#          { edit: InsertString, value: " !$" }
-#          { send: Enter }
-#        ]
-#    }
-#]
 source ~/.cache/carapace/init.nu

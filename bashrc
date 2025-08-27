@@ -25,6 +25,11 @@ source "$HOME/.dotfiles/bash/docker-aliases.sh"
 . "$HOME/.cargo/env"
 export AWS_DEFAULT_PROFILE=wasabi
 
+source "$HOME/.dotfiles/bash/secrets.sh"
+alias jira-me="jira issue list -a$(jira me) -s~Done -s~Closed -q\"project IS NOT EMPTY\""
+alias jira-dsmeet="jira issue worklog add --no-input DS-313 1h"
+alias jira-log="jira issue worklog add --timezone \"Europe/Brussels\""
+
 set -o vi
 bind -m vi-command ".":insert-last-argument
 bind -m vi-insert "\C-l.":clear-screen
